@@ -24,7 +24,8 @@ if __name__ == '__main__':
         next_key_element = driver.find_element_by_css_selector('a.next._btn._btn_next.on')
 
         for i in range(total_num - 1):
-            url = "http://192.249.19.242:7380/maintain"
+            # url = "http://192.249.19.242:7380/maintain"
+            url = "http://localhost:7380/exhibits/upload"
             headers = {'Content-Type': 'application/json', 'Accept':'application/json'}
             
             title_selector = 'div.item_box > dl > dd.tit > a'
